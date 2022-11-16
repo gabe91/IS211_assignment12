@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<html>
+   <body>
+      
+      <form action = "{{ url_for('add_student') }}" method = "POST">
+         <h3>Student Information</h3>
+         First Name<br>
+         <input type = "text" name = "first_name" required/></br>
+         
+         Last Name<br>
+         <input type = "text" name = "last_name" required/></br>
+      
+         Quiz Subject<br>
+         <input type = "text" name = "subject" required /></br>
+         
+         Number of Questions<br>
+         <input type = "integer" name = "questions" required/></br>
+         
+         Quiz Date<br>
+         <input type = "integer" name = "quiz_date" required/></br>
+
+      
+         
+         Quiz Grade<br>
+         <input type = "integer" name = "quiz_grade" required/></br>
+         
+         <input type = "submit" value = "submit" />
+      </form>
+      
+   </body>
+</html>
+
+{% endblock %}
