@@ -16,14 +16,14 @@ CREATE TABLE quiz (
     id integer primary key AUTOINCREMENT,
     subject text not null,
     questions integer,
-    quiz_date TEXT Not null,
-    grade integer not null
+    quiz_date TEXT Not null
 
 );
 
 
 CREATE TABLE student_result (
     student_id integer,
-    quiz_id integer
+    quiz_id integer,
+    grade
 );
 

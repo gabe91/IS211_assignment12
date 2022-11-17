@@ -2,7 +2,7 @@
 {% block content %}
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<h1>{% block title %} Student Results {% endblock %}</h1>
+<h1>{% block title %} Student {% endblock %}</h1>
 <table>
     <tr>
         <td>Student</td>
@@ -18,19 +18,5 @@
     {% endfor %}
         </tr>
     </table>
-    <table>
-        <tr>
-            <td>Quiz Subject</td>
-            <td>Number of questions</d>
-            <td>Date of Quiz</td>
-        </tr>
-    {% for quiz in quizzes %}
-        <tr class='post'>
-            {% for cell in quiz %}
-            
-            <td>{{ cell }}</td>
-
-            {% endfor %}
-        
-    {% endfor %}        
+               
 {% endblock %}
